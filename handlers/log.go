@@ -14,7 +14,7 @@ import (
 var (
 	maxLogSizeInKB = int64(1024) //1MB
 	// TODO: parameterize this like maxLogSizeInKB
-	supportedLogPaths = []string{"/tmp", "/var/log", "/dev/log"}
+	supportedLogPaths = []string{"/tmp", "/var/log", "/dev/log", "/var"}
 )
 
 func listDirContent(w http.ResponseWriter, path string) error {
